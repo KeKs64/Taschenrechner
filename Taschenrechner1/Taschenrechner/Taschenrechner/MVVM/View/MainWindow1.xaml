@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="Taschenrechner.MainWindow1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Taschenrechner"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="450">
+    
+    <Grid Background="{DynamicResource ResourceKey=BackgroundBrush}">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="450">
+
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="ButtonPlus" Content="+" Margin="332,339,0,0" Width="100" Click="ButtonPlus_Click" FontSize="36" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{DynamicResource RechenKeys}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" BorderBrush="{DynamicResource RechenKeys}"/>
+        <Button x:Name="Button0" Content="0" Height="50" Margin="122,394,0,0" Width="100" Click="Button0_Click" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{DynamicResource MainKeys}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" BorderBrush="{DynamicResource MainKeys}"/>
+        <Button x:Name="ButtonMinus" Content="-" Height="50" Margin="332,284,0,0" Width="100" Click="ButtonMinus_Click" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{DynamicResource RechenKeys}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" BorderBrush="{DynamicResource RechenKeys}"/>
+        <Button x:Name="Button1" Content="1" Height="50" Margin="17,339,0,0" Width="100" Click="Button1_Click" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{DynamicResource MainKeys}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" BorderBrush="{DynamicResource MainKeys}"/>
+        <Button x:Name="Button2" Content="2" Height="50" Margin="122,339,0,0" Width="100" Click="Button2_Click" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{DynamicResource MainKeys}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" BorderBrush="{DynamicResource MainKeys}"/>
+        <Button x:Name="Button3" Content="3" Height="50" Margin="228,339,0,0" Width="100" Click="Button3_Click" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{DynamicResource MainKeys}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" BorderBrush="{DynamicResource MainKeys}"/>
+        <Button x:Name="Button4" Content="4" Height="50" Margin="17,284,0,0" Width="100" Click="Button4_Click" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Left"  Background="{DynamicResource MainKeys}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" BorderBrush="{DynamicResource MainKeys}"/>
+        <Button x:Name="Button5" Content="5" Height="50" Margin="122,284,0,0" Width="100" Click="Button5_Click" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{DynamicResource MainKeys}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" BorderBrush="{DynamicResource MainKeys}"/>
+        <Button x:Name="Button6" Content="6" Height="50" Margin="228,284,0,0" Width="100" Click="Button6_Click" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{DynamicResource MainKeys}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" BorderBrush="{DynamicResource MainKeys}"/>
+        <Button x:Name="Button7" Content="7" Height="50" Margin="17,229,0,0" Width="100" Click="Button7_Click" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{DynamicResource MainKeys}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" BorderBrush="{DynamicResource MainKeys}"/>
+        <Button x:Name="Button8" Content="8" Height="50" Margin="122,229,0,0" Width="100" Click="Button8_Click" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{DynamicResource MainKeys}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" BorderBrush="{DynamicResource MainKeys}"/>
+        <Button x:Name="Button9" Content="9" Height="50" Margin="228,229,0,0" Width="100" Click="Button9_Click" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{DynamicResource MainKeys}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" BorderBrush="{DynamicResource MainKeys}"/>
+        <Button x:Name="ButtonMal" Content="x" Margin="332,229,0,0" Width="100" Click="ButtonMal_Click" FontSize="36" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Background="{DynamicResource RechenKeys}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" BorderBrush="{DynamicResource RechenKeys}"/>
+        <Button x:Name="ButtonGeteilt" Content="/" Height="50" Margin="332,174,0,0" Width="100" Click="ButtonGeteilt_Click" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{DynamicResource RechenKeys}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" BorderBrush="{DynamicResource RechenKeys}"/>
+        <Button x:Name="ButtonErgebnis" Content="=" Margin="332,394,0,0" Width="100" Click="ButtonErgebnis_Click" FontSize="36" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Background="{DynamicResource ErgebnisKey}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=BackgroundBrush}" BorderBrush="{DynamicResource ErgebnisKey}"/>
+        <Button x:Name="ButtonDelete" Content="Del" Margin="332,119,0,0" Width="100" Click="ButtonDelete_Click" FontSize="36" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Background="{DynamicResource RechenKeys}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" BorderBrush="{DynamicResource RechenKeys}"/>
+
+        <TextBox FlowDirection="LeftToRight" x:Name="Ergebnis" Height="60" Margin="18,54,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" IsReadOnly="True" FontSize="48" FontWeight="Medium" Background="{DynamicResource ResourceKey=BackgroundBrush}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" HorizontalAlignment="Left" Width="414" BorderBrush="{DynamicResource BackgroundBrush}"/>
+        <Button x:Name="ButtonKomma" Content="," Height="50" Margin="228,394,0,0" Width="100" Click="ButtonKomma_Click" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{DynamicResource MainKeys}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" BorderBrush="{DynamicResource MainKeys}"/>
+        <Button x:Name="ButtonKlammerZu" Content=")" Height="50" Margin="228,174,0,0" Width="100" Click="ButtonKlammerZu_Click" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{DynamicResource RechenKeys}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" BorderBrush="{DynamicResource RechenKeys}"/>
+        <Button x:Name="ButtonKlammerAuf" Content="(" Height="50" Margin="123,174,0,0" Width="100" Click="ButtonKlammerAuf_Click" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{DynamicResource RechenKeys}" Style="{DynamicResource RoundButton}" Foreground="{DynamicResource ResourceKey=ForegroundBrush}" BorderBrush="{DynamicResource RechenKeys}"/>
+        <Button Content="Settings"
+                Height="20"
+                Width="50"
+                Margin="382,14,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Command="{Binding NavigateToSettingsCommand}"/>
+
+    </Grid>
+</UserControl>

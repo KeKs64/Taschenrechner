@@ -1,0 +1,34 @@
+﻿<Application x:Class="Taschenrechner.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Taschenrechner"
+             xmlns:viewModel="clr-namespace:Taschenrechner.MVVM.ViewModel"
+             xmlns:view="clr-namespace:Taschenrechner">
+
+    <Application.Resources>
+
+        <ResourceDictionary>
+            
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="RoundButton.xaml"/>
+                <ResourceDictionary Source="DarkTheme.xaml"/>
+                <ResourceDictionary Source="LightTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            
+            <DataTemplate DataType="{x:Type TypeName=viewModel:Window1ViewModel}">
+                <view:MainWindow1/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type TypeName=viewModel:SettingsViewModel}">
+                <view:SettingsView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type TypeName=viewModel:MainWindowViewModel}">
+                <view:MainWindow/>
+            </DataTemplate>
+
+        </ResourceDictionary>
+        
+
+    </Application.Resources>
+</Application>
