@@ -1,0 +1,29 @@
+# Ignore IDE-specific files
+.idea/
+*.iml
+*.DotSettings.user
+
+# Ignore build output folders
+bin/
+obj/
+out/
+dist/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore compiled files
+*.class
+*.dll
+*.exe
+*.so
+
+# Ignore sensitive files (adjust based on your needs)
+.env
+*.key
+*.pem
